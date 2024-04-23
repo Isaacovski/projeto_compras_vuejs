@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import SlidePanel from '@/components/shared/SlidePanel.vue'
 
 const cartVisible = ref(false);
 
@@ -25,6 +26,12 @@ const changeCartVisibility = () => {
     > 
       Open Cart 
     </button>
+    <SlidePanel
+      :title ="Cart"
+      :visible="cartVisible"
+      @update:visible="changeCartVisibility()"
+      >
+    </SlidePanel>
 </div>
 </template>
 
