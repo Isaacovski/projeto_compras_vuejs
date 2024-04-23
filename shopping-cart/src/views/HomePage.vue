@@ -27,12 +27,12 @@ const changeCartVisibility = () => {
       Open Cart 
     </button>
     <SlidePanel
-      :title ="Cart"
-      :visible="cartVisible"
-      @update:visible="changeCartVisibility()"
-      >
-    </SlidePanel>
-</div>
+  :title="'Cart'" 
+  :visible="cartVisible"
+  @update:visible="changeCartVisibility()"
+>
+</SlidePanel>
+</div> 
 </template>
 
 <style lang="scss" scoped>  

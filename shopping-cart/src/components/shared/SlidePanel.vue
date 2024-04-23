@@ -26,7 +26,7 @@ const closePanel = () => {
     <div class="panel">
       <div>
         <!-- Botão para fechar o painel -->
-        <button class="btn error-outline" @click="closePanel">
+        <button class="btn error-outline" @click="closePanel()">
           Close 
         </button>
         <h2>{{ title }}</h2>
@@ -57,6 +57,7 @@ const closePanel = () => {
     width: 30 em;
     transform: translateX(100%);
     transition: 0.3s ease-out;
+    z-index: 1  ;
     
    &.visible{
     transform: translateX(0);
