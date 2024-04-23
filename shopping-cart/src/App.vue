@@ -1,10 +1,10 @@
 <script setup>
-import HomeView  from './views/HomePage.vue';
+import HomePage  from './views/HomePage.vue';
 
 </script>
 
 <template>
-  <HomeView/>
+  <HomePage/>
 </template>
 
 <style scoped>
